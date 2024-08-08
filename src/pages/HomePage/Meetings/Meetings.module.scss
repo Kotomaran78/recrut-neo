@@ -1,0 +1,39 @@
+.meetings {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__createButton {
+    background-color: #33b5e5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0099cc;
+    }
+  }
+
+  &__cardsContainer {
+    max-height: 400px; /* Ограничение высоты */
+    overflow-y: auto; /* Прокрутка вниз */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  &__card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+}

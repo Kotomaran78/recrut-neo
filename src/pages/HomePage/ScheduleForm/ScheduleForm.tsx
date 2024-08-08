@@ -360,9 +360,11 @@ const ScheduleForm: React.FC = () => {
             ))}
           </tbody>
         </table>
-        <button type='submit' className={styles.scheduleForm__submitButton}>
-          Отправить
-        </button>
+        <div className={styles.scheduleForm__buttonWrapper}>
+          <button type='submit' className={styles.scheduleForm__buttonSubmit}>
+            Отправить
+          </button>
+        </div>
       </form>
 
       {submittedSlots.length > 0 && (
