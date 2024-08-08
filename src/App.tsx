@@ -5,9 +5,9 @@ import { Outlet } from 'react-router-dom';
 const App: React.FC = () => {
   return (
     <AuthProvider>
-      <main>
-        <Outlet />
-      </main>
+        <main>
+          <Outlet />
+        </main>
     </AuthProvider>
   );
 };

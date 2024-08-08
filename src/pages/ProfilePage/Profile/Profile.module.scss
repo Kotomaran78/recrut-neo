@@ -1,39 +1,56 @@
-.loginForm {
-  width: 60%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 2px 4px 1px #0000001d;
-  max-width: 400px;
-  box-sizing: border-box;
-  width: 100%;
+.profile {
+  &__form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 1px #0000001d;
+    border-radius: 10px;
+    padding: 32px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #4a4a4a;
+  }
 
   &__formItem {
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: left;
   }
 
-  &__label {
+  &__label,
+  &__item {
     color: #4a4a4a;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-right: 20px;
   }
 
-  &__input,
-  &__select {
-    color: #4a4a4a;
+  &__email {
+    color: #2b2b2b;
+    font-size: 1rem;
+  }
+
+  &__input {
     background-color: #fff;
+    color: #4a4a4a;
     font-size: 1rem;
     padding: 10px 15px;
     border: 2px solid #c2e0ff;
     border-radius: 6px;
-    width: 100%;
+    // width: 100%;
     box-sizing: border-box;
+
+    &::placeholder {
+      color: #4a4a4a;
+    }
   }
 
-  &__select {
-    cursor: pointer;
+  &__error {
+    color: #ff7575;
+    font-size: 1rem;
+    margin-top: 5px;
   }
 
   &__buttonWrapper {

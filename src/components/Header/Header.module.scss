@@ -1,0 +1,78 @@
+.header {
+  width: 100%;
+  background-color: #f5edeb;
+
+  &__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    color: #4e4e4e;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #999999;
+    }
+
+     &:active {
+      color: #c0c0c0;
+    }
+  }
+
+  &__profileMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__iconProfile {
+    display: inline-flex;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      // filter: hue-rotate(45deg) brightness(1.2); // Легкий золотистый оттенок при наведении
+      filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7)); // Тень вокруг непрозрачных частей иконки
+    }
+
+    &:active {
+      // filter: hue-rotate(45deg) brightness(1.2) contrast(1.1); // Усиленный эффект при клике
+      filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.9));
+    }
+
+    
+  }
+  
+  &__img {
+      width: 48px;
+    }
+
+  &__logoutButton {
+    color: #fff;
+    background-color: #33b5e5;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #0099cc;
+    }
+
+    &:active {
+      background-color: #007bb5;
+    }
+  }
+}

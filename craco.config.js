@@ -7,7 +7,7 @@ module.exports = {
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@styles": path.resolve(__dirname, "src/styles/"),
       "@context": path.resolve(__dirname, "src/context/"),
-      // "@assets": path.resolve(__dirname, "src/assets/"),
+      "@assets": path.resolve(__dirname, "src/assets/"),
       // "@api": path.resolve(__dirname, "src/api/"),
     },
   },
@@ -18,6 +18,7 @@ module.exports = {
     sass: {
       loaderOptions: {
         additionalData: `@import "src/styles/_variables.scss";`,
+        additionalData: `@import "src/styles/_fonts.scss";`,
       },
     },
   },

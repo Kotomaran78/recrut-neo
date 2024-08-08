@@ -1,15 +1,21 @@
-import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import HomePage from "@pages/HomePage";
-import LoginPage from "@pages/LoginPage";
-import ProtectedRoute from "src/routers/ProtectedRoute";
+import React from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import App from '../App';
+import HomePage from '@pages/HomePage';
+import LoginPage from '@pages/LoginPage';
+import ProtectedRoute from 'src/routers/ProtectedRoute';
+import ProfilePage from '@pages/ProfilePage';
+import NotFoundPage from '@pages/NotFoundPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
+      {
+        path: 'login',
+        element: <LoginPage />,
+      },
       {
         path: '',
         element: (
@@ -19,8 +25,20 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'login',
-        element: <LoginPage />,
+        path: '/profile',
+        element: (
+          <ProtectedRoute>
+            <ProfilePage />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: '*',
+        element: (
+          <ProtectedRoute>
+            <NotFoundPage />
+          </ProtectedRoute>
+        ),
       },
     ],
   },
