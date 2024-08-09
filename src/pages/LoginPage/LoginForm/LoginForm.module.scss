@@ -1,12 +1,27 @@
 .loginForm {
-  width: 60%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 2px 4px 1px #0000001d;
   max-width: 400px;
   box-sizing: border-box;
   width: 100%;
+  height: auto;
+
+  &__logoBlock {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    width: 48px;
+    margin-right: 20px;
+  }
+
+  &__form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 2px 4px 1px #0000001d;
+  }
 
   &__formItem {
     margin-bottom: 20px;
@@ -27,7 +42,7 @@
     font-size: 1rem;
     padding: 10px 15px;
     border: 2px solid #c2e0ff;
-    border-radius: 6px;
+    border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
   }

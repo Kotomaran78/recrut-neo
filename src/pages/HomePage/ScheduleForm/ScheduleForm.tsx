@@ -307,7 +307,7 @@ const ScheduleForm: React.FC = () => {
   return (
     <section className={styles.scheduleForm__section}>
       <form onSubmit={handleSubmit} className={styles.scheduleForm__form}>
-        <h2>Выберите удобное время встречи</h2>
+        <h2>Выбрать удобное время встречи</h2>
         <table className={styles.scheduleForm__table}>
           <thead>
             <tr>

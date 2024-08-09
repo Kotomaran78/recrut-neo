@@ -3,9 +3,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import HomePage from '@pages/HomePage';
 import LoginPage from '@pages/LoginPage';
-import ProtectedRoute from 'src/routers/ProtectedRoute';
+import ProtectedRoute from './ProtectedRoute';
 import ProfilePage from '@pages/ProfilePage';
 import NotFoundPage from '@pages/NotFoundPage';
+import CreateMeetingPage from '@pages/CreateMeetingPage';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,14 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <ProfilePage />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: '/create-meeting',
+        element: (
+          <ProtectedRoute>
+            <CreateMeetingPage />
           </ProtectedRoute>
         ),
       },

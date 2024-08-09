@@ -2,10 +2,12 @@
   "name": "recrut-neo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kotomaran78.github.io/recrut-neo",
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "axios": "^1.7.3",
+    "gh-pages": "^6.1.1",
     "js-cookie": "^3.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -36,7 +38,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

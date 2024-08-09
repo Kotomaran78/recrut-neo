@@ -1,4 +1,10 @@
 .meetings {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 1px #0000001d;
+  border-radius: 10px;
+  padding: 32px;
+  margin-bottom: 40px;
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -6,34 +12,68 @@
     margin-bottom: 20px;
   }
 
-  &__createButton {
-    background-color: #33b5e5;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+  // &__Button {
+  //   text-decoration: none;
+  //   color: #fff;
+  //   background-color: #33b5e5;
+  //   padding: 10px 30px;
+  //   font-size: 20px;
+  //   font-weight: 700;
+  //   cursor: pointer;
+  //   border: none;
+  //   border-radius: 8px;
+  //   transition: all 0.3s ease;
+  //   &:hover {
+  //     background-color: #0099cc;
+  //   }
+
+  //   &:active {
+  //     background-color: #007bb5;
+  //   }
+  // }
+
+  &__Button {
+    display: inline-flex;
     text-decoration: none;
-    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: #0099cc;
+      // filter: hue-rotate(45deg) brightness(1.2); // Легкий золотистый оттенок при наведении
+      filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7)); // Тень вокруг непрозрачных частей иконки
     }
+
+    &:active {
+      // filter: hue-rotate(45deg) brightness(1.2) contrast(1.1); // Усиленный эффект при клике
+      filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.9));
+    }
+  }
+
+  &__img {
+    width: 48px;
   }
 
   &__cardsContainer {
     max-height: 400px; /* Ограничение высоты */
     overflow-y: auto; /* Прокрутка вниз */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
+    // border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
   }
 
   &__card {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
+    background-color: #fff;
+  }
+
+  &__cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

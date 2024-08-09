@@ -64,6 +64,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '@context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import styles from './LoginForm.module.scss';
+import logoCat from '@assets/img/logoCat.png';
 
 const LoginForm: React.FC = () => {
   const [uName, setUName] = useState('');
@@ -89,11 +90,15 @@ const LoginForm: React.FC = () => {
     }
   };
 
-  const roles = ['Кандидат', 'Эксперт', 'Рекрутер', 'Админ'];
+  const roles = ['Кандидат', 'Эксперт', 'Рекрутер'];
 
   return (
     <section className={styles.loginForm}>
-      <form onSubmit={handleSubmit}>
+      <div className={styles.loginForm__logoBlock}>
+        <img src={logoCat} alt='Логотип' className={styles.loginForm__logo} />
+        <h3>SyncExpert</h3>
+      </div>
+      <form onSubmit={handleSubmit} className={styles.loginForm__form}>
         <div className={styles.loginForm__formItem}>
           <label className={styles.loginForm__label}>Имя</label>
           <input
@@ -112,7 +117,7 @@ const LoginForm: React.FC = () => {
             value={uEmail}
             onChange={(e) => setUEmail(e.target.value)}
             placeholder='xxx@xx.xx'
-            required
+            // required
           />
         </div>
         <div className={styles.loginForm__formItem}>
