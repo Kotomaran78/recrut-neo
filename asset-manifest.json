@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/recrut-neo/static/css/main.5998196b.css",
-    "main.js": "/recrut-neo/static/js/main.087555e4.js",
+    "main.css": "/recrut-neo/static/css/main.90096927.css",
+    "main.js": "/recrut-neo/static/js/main.069b1024.js",
     "static/media/catNotFound.png": "/recrut-neo/static/media/catNotFound.3b6b6cae63339a2c83c3.png",
+    "static/media/edit.svg": "/recrut-neo/static/media/edit.0798c10bbe9e59b0911c130810bdf7bc.svg",
     "static/media/cat-profile.svg": "/recrut-neo/static/media/cat-profile.cba2bc30cf940f1e2664b444af6dc142.svg",
+    "static/media/add-square.svg": "/recrut-neo/static/media/add-square.fc45edd97bb1051fd7dc021560994e25.svg",
     "index.html": "/recrut-neo/index.html",
-    "main.5998196b.css.map": "/recrut-neo/static/css/main.5998196b.css.map",
-    "main.087555e4.js.map": "/recrut-neo/static/js/main.087555e4.js.map"
+    "main.90096927.css.map": "/recrut-neo/static/css/main.90096927.css.map",
+    "main.069b1024.js.map": "/recrut-neo/static/js/main.069b1024.js.map"
   },
   "entrypoints": [
-    "static/css/main.5998196b.css",
-    "static/js/main.087555e4.js"
+    "static/css/main.90096927.css",
+    "static/js/main.069b1024.js"
   ]
 }
